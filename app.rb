@@ -14,7 +14,12 @@ module FormsLab
     end
 
     post '/pirates' do
-      binding.pry
+      #binding.pry
+      name = params["pirate"]["name"]
+      weight = params["pirate"]["weight"]
+      height = params["pirate"]["height"]
+      @pirate = Pirate.new(name, weight, height)
+      
 
     end
 
