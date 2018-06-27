@@ -9,7 +9,7 @@ module FormsLab
     end
 
     get '/new' do
-      binding.pry
+    
       erb :new
     end
 
