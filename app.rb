@@ -19,7 +19,7 @@ module FormsLab
       weight = params["pirate"]["weight"]
       height = params["pirate"]["height"]
       @pirate = Pirate.new(name, weight, height)
-      
+      erb :'pirates/show'
 
     end
 
