@@ -20,7 +20,9 @@ module FormsLab
       pirate_height = params["pirate"]["height"]
       @pirate = Pirate.new(pirate_name, pirate_weight, pirate_height)
 
-      name = params["pirate"]["ships"]["name"]
+      ship_name_1 = params["pirate"]["ships"][0]["name"]
+      ship_type_1 = params["pirate"]["ships"][0]["type"]
+      ship_booty_1 = params["pirate"]["ships"][0]["booty"]
       erb :'pirates/show'
 
     end
