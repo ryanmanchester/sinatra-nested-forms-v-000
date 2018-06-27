@@ -15,10 +15,10 @@ module FormsLab
 
     post '/pirates' do
       binding.pry
-      name = params["pirate"]["name"]
-      weight = params["pirate"]["weight"]
-      height = params["pirate"]["height"]
-      @pirate = Pirate.new(name, weight, height)
+      pirate_name = params["pirate"]["name"]
+      pirate_weight = params["pirate"]["weight"]
+      pirate_height = params["pirate"]["height"]
+      @pirate = Pirate.new(pirate_name, pirate_weight, pirate_height)
 
       name = params["pirate"]["ships"]["name"]
       erb :'pirates/show'
