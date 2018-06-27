@@ -4,7 +4,7 @@ module FormsLab
   class App < Sinatra::Base
 
     get '/' do
-      erb :new
+      "Welcome to the Nested Forms Lab!"
     end
 
   end
