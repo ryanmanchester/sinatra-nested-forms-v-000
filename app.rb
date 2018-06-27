@@ -4,7 +4,7 @@ module FormsLab
   class App < Sinatra::Base
 
     get '/' do
-      "Hello World"
+      erb :new
     end
 
   end
