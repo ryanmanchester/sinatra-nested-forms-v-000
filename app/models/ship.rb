@@ -1,8 +1,10 @@
+require 'pry'
 class Ship
   attr_accessor :name, :type, :booty
   SHIPS = []
 
   def initialize(name, type, booty)
+    binding.pry
     @name = name
     @type = type
     @booty = booty
