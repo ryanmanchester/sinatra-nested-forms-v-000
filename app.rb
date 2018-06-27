@@ -24,6 +24,11 @@ module FormsLab
       ship_type_1 = params["pirate"]["ships"][0]["type"]
       ship_booty_1 = params["pirate"]["ships"][0]["booty"]
       @ship_1 = Ship.new(ship_name_1, ship_type_1, ship_booty_1)
+
+      ship_name_2 = params["pirate"]["ships"][1]["name"]
+      ship_type_2 = params["pirate"]["ships"][1]["type"]
+      ship_booty_2 = params["pirate"]["ships"][1]["booty"]
+      @ship_2 = Ship.new(ship_name_2, ship_type_2, ship_booty_2)
       erb :'pirates/show'
 
     end
